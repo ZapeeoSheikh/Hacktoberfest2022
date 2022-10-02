@@ -14,7 +14,7 @@
 
 <br/>
 
-HacktoberFest Developement in given language.
+HacktoberFest Developement of given language are only accepted here.
 
 Just fork it and add a hello world to contribute for hacktober fest and send a Pull Request!
 
