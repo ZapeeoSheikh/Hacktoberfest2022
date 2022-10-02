@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient(-90deg,rgb(90, 221, 253),rgb(44, 194, 253));
+}
+#maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+#inputfield{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+#startquiz{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+    width: 150px;
+    font-size: 18px;
+}
+#startquiz:hover{
+    background-image:linear-gradient(rgb(14, 154, 235),rgb(6, 105, 185));}
+
+
+#quizcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 60vw;
+    margin: auto;
+    flex-direction: column;    
+    border: 2px solid black;
+    margin-top: 20px;
+    box-shadow: 5px 10px 12px rgb(75, 47, 47);
+}
+#quizpagewelcome{
+    height: 80vh;
+}
+#quizquestion{
+    height: 70vh;
+    width: 50vw;
+}
+.optionspace{
+    margin-bottom: 70px;
+}
+
+.nextquestionbtn{
+    display: flex;
+    float: right;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.nextquestionbtn:hover,.submitbtn:hover,#returntohomepg:hover{
+    background-image: radial-gradient(rgb(24, 197, 125),black);
+    color: whitesmoke;
+    
+}
+.submitbtn{
+    display: flex;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+#returntohomepg{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+    width: 150px;
+    font-size: 18px;
+    text-decoration: none;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: wheat;
+}
+
+@media only screen and (max-width: 400px) {
+    #quizquestion{
+        height: 70vh;
+        width: 90vw;
+    }
+    #quizcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 95vw;
+        margin: auto;
+        flex-direction: column;    
+        border: 2px solid black;
+        margin-top: 20px;
+        box-shadow: 5px 10px 12px rgb(75, 47, 47);
+    }
+   body{
+       margin: 2px;
+   }
+}
