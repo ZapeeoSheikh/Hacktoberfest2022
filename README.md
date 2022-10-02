@@ -1,7 +1,7 @@
 # Hacktoberfest2022
 ``` This is the Web Development Repository for Hacktoberfest 2022. A beginner friendly repository made specifically for open source beginners for Hacktoberfest. Add any program under these languages ( HTML, CSS, JavaScript, Bootstrap, JQuery, SQL, Sass, C# ) ```
 
-# Hacktoberfest
+
 
 [![Contribution Open](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ZapeeoSheikh/Hacktoberfest2022/blob/master/CONTRIBUTING.md)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ZapeeoSheikh/Hacktoberfest2022/issues)
