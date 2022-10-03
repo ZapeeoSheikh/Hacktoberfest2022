@@ -19,7 +19,17 @@ body {
   flex-direction: column;
   background-color: #576574;
   padding: 30px 40px;
+  animation: bounce 2s ease-in-out infinite alternate;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+  
 .content .generate {
   color: #ff9f43;
   padding: 10px 30px;
