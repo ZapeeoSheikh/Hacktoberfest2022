@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Counter</h2>
+      <h1 class="count">0</h1>
+      <div class="button-box">
+        <button class="reduce btns">reduce</button>
+        <button class="add btns">add</button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      (function () {
+        const buttons = document.querySelectorAll(".btns");
+        let count = 0;
+
+        //Add event listeners and functionailty to each button
+        buttons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            if (button.classList.contains("reduce")) {
+              count--;
+            } else if (button.classList.contains("add")) {
+              count++;
+            }
+
+            //Select the counter text
+            const counter = document.querySelector(".count");
+            counter.textContent = count;
+
+            if (count < 0) {
+              counter.style.color = "red";
+            } else if (count > 0) {
+              counter.style.color = "green";
+            } else {
+              counter.style.color = "white";
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

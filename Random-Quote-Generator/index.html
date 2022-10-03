@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quote Generator</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <button class="generate">generate quote</button>
+
+      <h3 class="dumquote">
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      </h3>
+      <h5>~ <span class="author"> Author</span></h5>
+    </div>
+    <script type="text/javascript">
+      (function () {
+        let quotes = [
+          {
+            quote:
+              "Art is the only serious thing in the world. And the artist is the only person who is never serious",
+            author: "themozart",
+          },
+          {
+            quote: "I never paint dreams or nightmares. I paint my own reality",
+            author: "themozart",
+          },
+          {
+            quote:
+              "Where the spirit does not work with the hand, there is no art",
+            author: "themozart",
+          },
+          {
+            quote: "Art is not what you see, but what you make others see",
+            author: "themozart",
+          },
+          {
+            quote: "All art, like all love, is rooted in heartache",
+            author: "themozart",
+          },
+          { quote: "Art is my life and my life is art", author: "themozart" },
+        ];
+
+        let btn = document.querySelector(".generate");
+
+        btn.addEventListener("click", function () {
+          let random = Math.floor(Math.random() * quotes.length);
+          console.log(random);
+
+          document.querySelector(".dumquote").textContent =
+            quotes[random].quote;
+          document.querySelector(".author").textContent = quotes[random].author;
+        });
+      })();
+    </script>
+  </body>
+</html>
