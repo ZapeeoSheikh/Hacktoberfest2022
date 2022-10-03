@@ -1,0 +1,35 @@
+.navbar-nav{
+    margin: 0 auto;
+}
+
+#mainheading{
+    text-align: center;
+    color: rgba(26, 25, 25, 0.808);
+    margin: 80px 10px 80px 10px;
+}
+#subheading{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 80px 10px 80px 10px;
+}
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer{
+    background-color: rgba(26, 25, 25, 0.952);;
+}
+.footer-link-color{
+    color: #007bff;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.card-deck{
+    margin:15px 5px 20px 5px;
+}
