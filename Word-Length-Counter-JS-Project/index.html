@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Length Counter</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Word Length Counter</h2>
+      <input
+        placeholder="Type a Word to Find Length"
+        class="string"
+        type="text"
+      />
+      <h2 class="output"></h2>
+    </div>
+    <script type="text/javascript">
+      let input = document.querySelector(".string");
+
+      input.addEventListener("input", function () {
+        let value = input.value.length;
+        let output = document.querySelector(".output");
+
+        output.textContent = value;
+      });
+    </script>
+  </body>
+</html>
