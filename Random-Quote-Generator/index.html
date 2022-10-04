@@ -16,41 +16,21 @@
     </div>
     <script type="text/javascript">
       (function () {
-        let quotes = [
-          {
-            quote:
-              "Art is the only serious thing in the world. And the artist is the only person who is never serious",
-            author: "themozart",
-          },
-          {
-            quote: "I never paint dreams or nightmares. I paint my own reality",
-            author: "themozart",
-          },
-          {
-            quote:
-              "Where the spirit does not work with the hand, there is no art",
-            author: "themozart",
-          },
-          {
-            quote: "Art is not what you see, but what you make others see",
-            author: "themozart",
-          },
-          {
-            quote: "All art, like all love, is rooted in heartache",
-            author: "themozart",
-          },
-          { quote: "Art is my life and my life is art", author: "themozart" },
-        ];
-
         let btn = document.querySelector(".generate");
 
         btn.addEventListener("click", function () {
-          let random = Math.floor(Math.random() * quotes.length);
-          console.log(random);
-
-          document.querySelector(".dumquote").textContent =
-            quotes[random].quote;
-          document.querySelector(".author").textContent = quotes[random].author;
+          fetch("https://type.fit/api/quotes")
+            .then(function (response) {
+              return response.json();
+            })
+            .then(function (data) {
+              let random = Math.floor(Math.random() * data.length);
+              let randomQuote = data[random];
+              document.querySelector(".dumquote").textContent =
+                randomQuote.text;
+              document.querySelector(".author").textContent = randomQuote.author;
+            });
+          
         });
       })();
     </script>
