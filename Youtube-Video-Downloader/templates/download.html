@@ -1,0 +1,32 @@
+{% block download %}
+<form method="POST" action="{{ url_for('download_video') }}">
+    <div class="card my-4 mx-auto" style="max-width: 1300px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{{url.thumbnail_url}}" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ url.title }}</h5>
+              <p class="card-text">
+                <div class="col-md-5">
+                  <select name="itag" class="form-select input-sm" aria-label="Default select example">
+                      {% for i in url.streams.filter(progressive=True) %}
+                          <option value="{{ i.itag }}"> {{ i.resolution }} </option>
+                      {% endfor %}
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-danger mt-3" id = "download_btn">
+                  Download
+                </button>
+                <button class="btn btn-danger mt-3" type="button" style="display: none" id = "loading_btn" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</form>
+{% endblock %}
