@@ -4,7 +4,7 @@
 
 #mainheading{
     text-align: center;
-    color: rgba(26, 25, 25, 0.808);
+    color: rgba(250, 248, 248, 0.808);
     margin: 80px 10px 80px 10px;
 }
 #subheading{
@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 
 .footer{
@@ -32,4 +33,10 @@ body{
 
 .card-deck{
     margin:15px 5px 20px 5px;
+}
+.card-body:hover{
+    background-color: yellow;
+    transform: scale(1.0);
+
+
 }
